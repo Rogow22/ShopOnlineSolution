@@ -1,0 +1,78 @@
+﻿h3 {
+    color: #007bff;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.external-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+.contact {
+    color: #53c84b !important;
+    position: fixed;
+    bottom: 40px;
+    left: 5px;
+    z-index: 1000;
+}
+
+@media (min-width: 641px) {
+    .external-link a {
+        font-size: 18px;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        display: block;
+    }
+
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    .footer a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }

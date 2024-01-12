@@ -1,0 +1,34 @@
+﻿@page "/login"
+@inherits LoginBase
+
+@if (LoginSuccess)
+{
+    <div class="login-success">
+        Successfully logged in! Redirecting...
+    </div>
+}
+else
+{
+    <form class="login-form">
+        <h3>Login</h3>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" @bind="LoginModel.Username" />
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" @bind="LoginModel.Password" />
+        </div>
+
+        <button @onclick="LoginUserBase">Login</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ErrorMessage))
+    {
+        <div class="error-message">
+            @ErrorMessage
+        </div>
+    }
+}

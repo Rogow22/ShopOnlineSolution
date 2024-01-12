@@ -1,0 +1,32 @@
+﻿@page "/register"
+@inherits RegisterBase
+
+@if (RegistrationSuccess)
+{
+    <div class="registration-success">
+        Successfully registered! Redirecting to login page...
+    </div>
+}
+else
+{
+    <form class="register-form">
+        <h3>Register</h3>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" @bind="RegisterModel.Username" />
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" @bind="RegisterModel.Email" />
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" @bind="RegisterModel.Password" />
+        </div>
+
+        <button @onclick="RegisterUserBase">Register</button>
+    </form>
+}

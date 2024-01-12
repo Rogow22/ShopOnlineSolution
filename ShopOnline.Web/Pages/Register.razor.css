@@ -1,0 +1,48 @@
+﻿/* Styl dla całego formularza */
+.register-form {
+    max-width: 400px; /* Maksymalna szerokość formularza */
+    margin: auto; /* Wyśrodkowanie formularza */
+    padding: 20px; /* Wewnętrzny odstęp formularza */
+    background-color: #f4f4f4; /* Kolor tła formularza */
+    border: 1px solid #ddd; /* Ramka formularza */
+    border-radius: 8px; /* Zaokrąglenie narożników formularza */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień formularza */
+}
+
+    /* Styl dla nagłówka formularza */
+    .register-form h3 {
+        text-align: center; /* Wyśrodkowanie tekstu */
+        color: #333; /* Kolor tekstu */
+    }
+
+    /* Styl dla etykiet formularza */
+    .register-form label {
+        display: block; /* Każda etykieta w osobnym wierszu */
+        margin-bottom: 6px; /* Odstęp między etykietami */
+        color: #555; /* Kolor tekstu etykiety */
+    }
+
+    /* Styl dla pól tekstowych formularza */
+    .register-form input {
+        width: 100%; /* Szerokość 100% */
+        padding: 8px; /* Wewnętrzny odstęp pól tekstowych */
+        margin-bottom: 12px; /* Odstęp między polami tekstowymi */
+        border: 1px solid #ddd; /* Ramka pól tekstowych */
+        border-radius: 4px; /* Zaokrąglenie narożników pól tekstowych */
+    }
+
+    /* Styl dla przycisku formularza */
+    .register-form button {
+        width: 100%; /* Szerokość 100% */
+        padding: 10px; /* Wewnętrzny odstęp przycisku */
+        background-color: #28a745; /* Kolor tła przycisku */
+        color: #fff; /* Kolor tekstu przycisku */
+        border: none; /* Brak ramki przycisku */
+        border-radius: 4px; /* Zaokrąglenie narożników przycisku */
+        cursor: pointer; /* Kursor wskazujący na interakcję */
+    }
+
+        /* Styl dla przycisku formularza po najechaniu myszą */
+        .register-form button:hover {
+            background-color: #218838; /* Zmiana koloru tła po najechaniu myszą */
+        }

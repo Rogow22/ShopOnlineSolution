@@ -1,0 +1,23 @@
+﻿@page "/orderdetail"
+@inherits OrderDetailBase
+<h3>Order Details</h3>
+
+<p>Status: @OrderStatus</p>
+<p>Order Date: @OrderDate</p>
+
+@if (ShoppingCartItems != null && ShoppingCartItems.Any())
+{
+    <h4>Items Ordered</h4>
+    <ul>
+        @foreach (var item in ShoppingCartItems)
+        {
+            <li>@item.Qty x @item.ProductName&nbsp;</li>  
+            <b>@item.TotalPrice.ToString("C")</b>
+        }
+    </ul>
+    <td><b>Total - @PaymentAmount.ToString("C")</b></td>
+}
+else
+{
+    <p>No items to send</p>
+}
